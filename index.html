@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <!-- 格式识别 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <title>HTML5</title>
+</head>
+
+<body>
+    <div id="root" class="container">
+        <nav id="fiction_chapter_title" style="display: none;">
+            <div id="top-nav" class="top-nav">
+                <div class="icon-back"></div>
+                <div class="nav-title">返回书架</div>
+            </div>
+        </nav>
+        <div class="m-artical-action">
+            <div class="artical-action-mid" id="action-mid"></div>
+        </div>
+        <div id="fiction_container" class="m-read-content">
+            <h4>能标签标题标题</h4>
+            <p>语义： 能够让你更恰当地描述你的内容是什么。 连通性： 能够让你和服务器之间通过创新的新技术方法进行通信（web sockets等）。 离线 存储：能够让网页在客户端本地存储数据以及更高效地离线运行（离线资源、在线和离线事件、DOM存储、IndexDB、自web应用程序中使用文件[FileReader]）。 多媒体：使 video 和 audio 成为了在所有 Web 中的一等公民。 2D/3D 绘图 效果：提供了一个更加分化范围的呈现选择(canvas、webGL)。 性能 集成：提供了非常显著的性能优化和更有效的计算机硬件使用（WebWorkers、XMLHttpRequest2、HistoryAPI、拖放、requestAnimationFrame、全屏API、指针锁定API、在线和离线事件）。 设备访问 Device Access：能够处理各种输入和输出设备（触控事件touch、使用地理位置定位、检测设备方向）。</p>
+            <p>语义： 能够让你更恰当地描述你的内容是什么。 连通性： 能够让你和服务器之间通过创新的新技术方法进行通信（web sockets等）。 离线 存储：能够让网页在客户端本地存储数据以及更高效地离线运行（离线资源、在线和离线事件、DOM存储、IndexDB、自web应用程序中使用文件[FileReader]）。 多媒体：使 video 和 audio 成为了在所有 Web 中的一等公民。 2D/3D 绘图 效果：提供了一个更加分化范围的呈现选择(canvas、webGL)。 性能 集成：提供了非常显著的性能优化和更有效的计算机硬件使用（WebWorkers、XMLHttpRequest2、HistoryAPI、拖放、requestAnimationFrame、全屏API、指针锁定API、在线和离线事件）。 设备访问 Device Access：能够处理各种输入和输出设备（触控事件touch、使用地理位置定位、检测设备方向）。</p>
+        </div>
+        <div class="m-button-bar">
+            <ul class="u-tab">
+                <li id="pre_button">上一章</li>
+                <li id="next_button">下一章</li>
+            </ul>
+        </div>
+        <footer class="footer" id="font-container">
+            <div class="nav-pannel-bk nav_pannel_box" style="display: none;"></div>
+            <div class="nav-pannel nav_pannel_box" style="display: none;">
+                <div class="child-mod">
+                    <span>字号</span>
+                    <button id="large-font" class="font-size-button">大</button>
+                    <button id="small-font" class="font-size-button">小</button>
+                </div>
+                <div class="child-mod">
+                    <span>背景</span>
+                    <div class="bk-container">
+                        <div class="bk-container-current"></div>
+                    </div>
+                    <div class="bk-container">
+                        <div class="bk-container-current"></div>
+                    </div>
+                    <div class="bk-container">
+                        <div class="bk-container-current"></div>
+                    </div>
+                    <div class="bk-container">
+                        <div class="bk-container-current"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="footer-list" id="bottom_nav" style="display: none;">
+                <li class="footer-btn">
+                    <span class="footer-icon footer-icon1"></span>
+                    <div class="footer-p">样式</div>
+                </li>
+                <li class="footer-btn" id="font_btn">
+                    <span class="footer-icon footer-icon2"></span>
+                    <div class="footer-p">字体</div>
+                </li>
+                <li class="footer-btn" id="night_btn">
+                    <span class="footer-icon footer-icon3"></span>
+                    <div class="footer-p">模式</div>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script type="text/javascript" src="lib/zepto.min.js"></script>
+    <!-- 适用于手机端 更轻量级 -->
+    <script type="text/javascript">
+    window.jquery = $;
+    // 保证后面的库正常使用
+    </script>
+    <script type="text/javascript" src="js/jquery.base64.js"></script>
+    <script type="text/javascript" src="js/jquery.jsonp.js"></script>
+    <!-- 跨域 -->
+    <script type="text/javascript" src="js/myjs.js"></script>
+</body>
+
+</html>
