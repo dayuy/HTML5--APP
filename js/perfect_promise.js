@@ -105,7 +105,7 @@
         }
         var getCurChapterContentPromise = function() {
                 return new Promise(function(resolve, reject) {
-                    $.get('data/data' + chapter_id + '.json', function(data) {
+                    $.get('data/data' + Chapter_id + '.json', function(data) {
                         if (data.result == 0) {
                             var url = data.jsonp;
                             //发起jsonp请求 ，解码，封装一个方法。
@@ -119,14 +119,14 @@
 
                 })
         }
-            //5上一章、下一章
+            // 5上一章、下一章
         var prevChapter = function(UIcallback) {
             Chapter_id = parseInt(Chapter_id, 10);
             if (Chapter_id == 1) {
                 return;
             }
             Chapter_id -= 1;
-            getCurChapterContent(Chapter_id, UIcallback);
+            getCurChapterContentPromise(Chapter_id, UIcallback);
             Util.StorageSetter('ChapterId', Chapter_id);
         }
         var nextChapter = function(UIcallback) {
@@ -136,14 +136,13 @@
                 return;
             }
             Chapter_id += 1;
-            getCurChapterContent(Chapter_id, UIcallback);
+            getCurChapterContentPromise(Chapter_id, UIcallback);
             Util.StorageSetter('ChapterId', Chapter_id);
         }
         return {
             init: init,
             prevChapter: prevChapter,
-            nextChapter: nextChapter,
-            getCurChapterContent: getCurChapterContent
+            nextChapter: nextChapter
         }
     }
 
@@ -242,6 +241,5 @@
         });
 
     }
-
     main();
 })();

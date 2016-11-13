@@ -98,8 +98,8 @@
                 callback && callback();
             }, 'json');
         }
-        var getCurChapterContent = function(chapter_id, callback) {
-            $.get('data/data' + chapter_id + '.json', function(data) {
+        var getCurChapterContent = function(Chapter_id, callback) {
+            $.get('data/data' + Chapter_id + '.json', function(data) {
                 if (data.result == 0) {
                     var url = data.jsonp;
                     //发起jsonp请求 ，解码，封装一个方法。
