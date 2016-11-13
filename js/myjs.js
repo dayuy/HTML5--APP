@@ -44,7 +44,7 @@
 
     //读取存储中的背景颜色
     var initBackground = Util.StorageGetter('background-color');
-    RootContainer.css('background-color', initBackground);
+    $("#root").css('background-color', initBackground);
     if (initBackground == 'rgb(16, 16, 13)') {
         RootContainer.css('color', '#555');
     } else {
@@ -192,7 +192,7 @@
         //背景改变
         $('.bk-container').click(function() {
             var background = $(this).css('background-color');
-            RootContainer.css('background-color', background);
+            $("#root").css('background-color', background);
             Util.StorageSetter('background-color', background);
             if (background == 'rgb(16, 16, 13)') {
                 RootContainer.css('color', '#555');
