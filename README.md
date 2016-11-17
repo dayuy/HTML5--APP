@@ -1,6 +1,5 @@
-# HTML5--APP
-一款手机阅读APP
-1.运行
-  根目录 npm install express
-  npm app.js
-  
+###一款手机App: 电子书阅读器
+* 运行<br>
+	根目录下<br>
+	1. npm install express
+	2. node app.js 
